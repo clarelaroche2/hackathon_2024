@@ -27,6 +27,34 @@ const gameData = {
             "What an opportunity! I'm curious what data we could collect here...": [4,["ADCP", "PTZ"]],
         }
     },
+    "4": {
+        "text": "OVERRRRBOAAARRRRDDDD! As you sink into the water hit ground much sooner than expected. You have discovered a sea mount",
+        "image" : "smaller_images/at_beach.png",
+"choices": {
+            "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [6,["ADCP", "PTZ"]],
+            "Who cares?? It's still the water. Start looking for ways home" : [6,["Genset", "Starlink", "AIS"]],
+            "Gollie Geeee! I wonder if there are boats down here...": [6,["AIS", "PTZ"]],
+        }
+    },
+    "5": {
+        "text": "The storm is getting really rough. It's been days since you've seen the sun",
+        "image" : "smaller_images/at_beach.png",
+"choices": {
+            "Pray to every god until one answers": [6,["ADCP", "AIS", "Genset"]],
+            "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["AIS", "PTZ", "Starlink"]],
+            "It's time to be realistic. Start planning who's power you are going to pull first.": [6,["Genset", "PTZ", "AIS"]],
+        }
+    },
+    "6": {
+        "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
+        "image" : "smaller_images/at_beach.png",
+"choices": {
+            "SCREAM and tell it to get off": [0,["Genset","AIS"]],
+            "Say hi! Birds are cool": [0,["ADCP", "PTZ"]],
+            "Try to figure out if it is really a bird...": [0,["AIS, PTZ"]],
+            "Die": [0,["Starlink"]],
+        }
+    },
 };
 
 const personalities = {
