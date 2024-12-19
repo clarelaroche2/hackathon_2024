@@ -2,7 +2,7 @@ const gameData = {
     "1": {
         "text": "Congrats! You're going out on deployment... where are you going?",
         "image" : "smaller_images/snackies.png",
-        "choices": {
+"choices": {
             "Key West": [2,["AIS","Genset","PTZ","Starlink"]],
             "St Thomas": [2,["ADCP"]],
             "San Diego": [2,["PTZ", "Genset", "AIS"]],
@@ -10,9 +10,9 @@ const gameData = {
         }
     },
     "2": {
-        "text": "What is the purpose of your mission?",
+        "text": "What is the purpose of your mission??",
         "image" : "smaller_images/where_to.png",
-        "choices": {
+"choices": {
             "Revolutionizing ocean science, of course!": [3,["ADCP"]],
             "Military version of I spy": [3, ["PTZ", "Genset", "AIS", "Starlink"]],
             "I'm on an exciting R&D mission, testing out some new technology we've put into the ocean for the first time": [3, ["Starlink", "ADCP", "Genset"]]
@@ -20,15 +20,15 @@ const gameData = {
     },
     "3": {
         "text": "After some great preparation and clearing TechOps and Pilot checkouts, you're ready to go! Deployment goes off without a hitch, but soon you find yourself in the middle of a crazy storm. The waves are heaving, and the wind is gusting at over 30 knots! What do you do?",
-        "image" : "smaller_images/having_beach_fun.png",
-        "choices": {
+        "image" : "smaller_images/at_beach.png",
+"choices": {
             "Fall into the water... the wave came out of nowhere!!": [4,["ADCP", "AIS"]],
             "Hunker down! It makes the most sense to wait this one out": [4,["Genset", "PTZ", "Starlink"]],
             "What an opportunity! I'm curious what data we could collect here...": [4,["ADCP", "PTZ"]],
         }
-    }, 
-
+    },
 };
+
 const personalities = {
     "PTZ": 0, // Nosey bitch
     "Starlink": 0, // Elon Sympathizer
