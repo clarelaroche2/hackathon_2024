@@ -1,6 +1,7 @@
 const gameData = {
     "1": {
         "text": "Congrats! You're going out on deployment... where are you going?",
+        "image" : "images/snackies.png",
         "choices": {
             "Key West": [2,["AIS","Genset","PTZ","Starlink"]],
             "St Thomas": [2,["ADCP"]],
@@ -10,6 +11,7 @@ const gameData = {
     },
     "2": {
         "text": "What is the purpose of your mission?",
+        "image" : "images/snackies.png",
         "choices": {
             "Revolutionizing ocean science, of course!": [3,["ADCP"]],
             "Military version of I spy": [3, ["PTZ", "Genset", "AIS", "Starlink"]],
@@ -18,6 +20,7 @@ const gameData = {
     },
     "3": {
         "text": "After some great preparation and clearing TechOps and Pilot checkouts, you're ready to go! Deployment goes off without a hitch, but soon you find yourself in the middle of a crazy storm. The waves are heaving, and the wind is gusting at over 30 knots! What do you do?",
+        "image" : "images/snackies.png",
         "choices": {
             "Fall into the water... the wave came out of nowhere!!": [4,["ADCP", "AIS"]],
             "Hunker down! It makes the most sense to wait this one out": [5,["Genset", "PTZ", "Starlink"]],
