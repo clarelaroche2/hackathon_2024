@@ -4,7 +4,7 @@ const gameData = {
         "choices": {
             "Key West": [2,["AIS","Genset","PTZ","Starlink"]],
             "St Thomas": [2,["ADCP"]],
-         "San Diego": [2,["PTZ", "Genset", "AIS"]],
+            "San Diego": [2,["PTZ", "Genset", "AIS"]],
             "Caymans": [2,["Starlink","PTZ","ADCP"]],
         }
     },
