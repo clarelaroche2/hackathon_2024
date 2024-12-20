@@ -31,16 +31,16 @@ const gameData = {
         "text": "OVERRRRBOAAARRRRDDDD! As you sink into the water hit ground much sooner than expected. You have discovered a sea mount",
         "image" : "smaller_images/at_beach.png",
 "choices": {
-            "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [6,["adcp", "ptz"]],
-            "Who cares?? It's still the water. Start looking for ways home" : [6,["genset", "starlink", "ais"]],
-            "Gollie Geeee! I wonder if there are boats down here...": [6,["ai", "ptz"]],
+            "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [5,["adcp", "ptz"]],
+            "Who cares?? It's still the water. Start looking for ways home" : [5,["genset", "starlink", "ais"]],
+            "Gollie Geeee! I wonder if there are boats down here...": [5,["ais", "ptz"]],
         }
     },
     "5": {
         "text": "The storm is getting really rough. It's been days since you've seen the sun",
         "image" : "smaller_images/at_beach.png",
 "choices": {
-            "Pray to every god until one answers": [6,["adcp", "ai", "genset"]],
+            "Pray to every god until one answers": [6,["adcp", "ais", "genset"]],
             "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
             "It's time to be realistic. Start planning who's power you are going to pull first.": [6,["genset", "ptz", "ais"]],
         }
