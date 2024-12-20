@@ -241,7 +241,7 @@ function revealMostSelectedVegetable() {
 
         // Replace the text content with the new message
         text.innerHTML = ''; // Clear any previous content
-        text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        text.textContent = "Drumroll... here is your Sensor ID! Don't lose it! (Right click or hold the image to save)";
         
         // Append the new image and share button
         text.appendChild(img);
