@@ -41,8 +41,8 @@ const gameData = {
         "image" : "smaller_images/storm.png",
 "choices": {
             "Pray to every god until one answers": [6,["adcp", "ais", "genset"]],
-            "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
-            "It's time to be realistic. Start planning who's power you are going to pull first.": [6,["genset", "ptz", "ais"]],
+            "You've seen Treasure Planet, Moana 2, and Master and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
+            "It's time to be realistic. Start planning whose power you are going to pull first.": [6,["genset", "ptz", "ais"]],
         }
     },
     "6": {
@@ -204,7 +204,7 @@ function revealMostSelectedVegetable() {
     shareButton.className = 'choice-button';
 
     shareButton.onclick = () => {
-        const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+        const shareMessage = `Check out my Sensor ID! You can create yours at https://clarelaroche2.github.io/hackathon_2024/#`;
         navigator.clipboard.writeText(shareMessage).then(() => {
             alert('Link copied to clipboard!');
         }).catch(() => {
