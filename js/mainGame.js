@@ -46,6 +46,34 @@ const gameData = {
         }
     },
     "6": {
+        "text": "Finally the sun peeks out and the clouds clear, the storm has passed! In the distance, you hear dance music! What do you do next? ",
+        "image" : "smaller_images/disco.png",
+"choices": {
+            "Sounds like a party! I'm going to go check it out": [7,["adcp","ptz"]],
+            "Music isn't allowed out here! Someone should notify the authorities": [8,["ais"]],
+            "Listen to the music from a distance": [8,["starlink", "genset"]],
+        }
+    },
+    "7": {
+        "text": "As you sail towards the music, you realize it is coming from a pirate ship! How do you react?",
+        "image" : "smaller_images/pirates.png",
+"choices": {
+            "Call the Coast Guard": [9,["genset","ais"]],
+            "Give the pirates a bottle of rum and some shells": [9,["adcp", "ptz"]],
+            "Flee instantly": [9,["ais", "ptz"]],
+            "Pretend to be a pirate as well": [9,["starlink"]],
+        }
+    },
+    "8": {
+        "text": "You listen to the music on the water for a while, and eventually the sun sets. The stars are beautiful! Suddenly you see something suspicious in the night sky, a UFO?!!?! What do you do?",
+        "image" : "smaller_images/aliens.png",
+"choices": {
+            "Aliens aren't real!": [9,["genset","ptz"]],
+            "Spooky! I hope the aliens are friendly :p": [9,["adcp"]],
+            "Try to lay low": [9,["ais", "starlink"]],
+        }
+    },
+    "9": {
         "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
         "image" : "smaller_images/bird.png",
 "choices": {
