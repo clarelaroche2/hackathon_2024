@@ -1,7 +1,7 @@
 const gameData = {
     "1": {
         "text": "Congrats! You're going out on deployment... where are you going?",
-        "image" : "smaller_images/snackies.png",
+        "image" : "smaller_images/what_place.png",
 "choices": {
             "Key West": [2,["ais","genset","ptz","starlink"]],
             "St Thomas": [2,["adcp"]],
@@ -11,7 +11,7 @@ const gameData = {
     },
     "2": {
         "text": "What is the purpose of your mission??",
-        "image" : "smaller_images/where_to.png",
+        "image" : "smaller_images/what_mission.png",
 "choices": {
             "Revolutionizing ocean science, of course!": [3,["adcp"]],
             "Military version of I spy": [3, ["ptz", "genset", "ais", "starlink"]],
@@ -20,7 +20,7 @@ const gameData = {
     },
     "3": {
         "text": "After some great preparation and clearing TechOps and Pilot checkouts, you're ready to go! Deployment goes off without a hitch, but soon you find yourself in the middle of a crazy storm. The waves are heaving, and the wind is gusting at over 30 knots! What do you do?",
-        "image" : "smaller_images/at_beach.png",
+        "image" : "smaller_images/storm.png",
 "choices": {
             "Fall into the water... the wave came out of nowhere!!": [4,["adcp", "ais"]],
             "Hunker down! It makes the most sense to wait this one out": [4,["genset", "ptz", "starlink"]],
@@ -29,7 +29,7 @@ const gameData = {
     },
     "4": {
         "text": "OVERRRRBOAAARRRRDDDD! As you sink into the water hit ground much sooner than expected. You have discovered a sea mount",
-        "image" : "smaller_images/at_beach.png",
+        "image" : "smaller_images/seamount.png",
 "choices": {
             "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [5,["adcp", "ptz"]],
             "Who cares?? It's still the water. Start looking for ways home" : [5,["genset", "starlink", "ais"]],
@@ -37,8 +37,8 @@ const gameData = {
         }
     },
     "5": {
-        "text": "The storm is getting really rough. It's been days since you've seen the sun",
-        "image" : "smaller_images/at_beach.png",
+        "text": "The storm is getting really rough. It's been days since you've seen the sun. What do you try?",
+        "image" : "smaller_images/storm.png",
 "choices": {
             "Pray to every god until one answers": [6,["adcp", "ais", "genset"]],
             "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
@@ -47,7 +47,7 @@ const gameData = {
     },
     "6": {
         "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
-        "image" : "smaller_images/at_beach.png",
+        "image" : "smaller_images/bird.png",
 "choices": {
             "SCREAM and tell it to get off": [0,["genset","ais"]],
             "Say hi! Birds are cool": [0,["adcp", "ptz"]],
