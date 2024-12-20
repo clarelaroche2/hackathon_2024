@@ -110,6 +110,7 @@ function revealMostSelectedVegetable() {
     let maxCount = 0;
     let maxVeggie = '';
 
+    // Find the personality with the highest count
     for (const [vegetable, count] of Object.entries(personalities)) {
         if (count > maxCount) {
             maxCount = count;
@@ -117,43 +118,61 @@ function revealMostSelectedVegetable() {
         }
     }
 
+    // Fallback if no clear maxVeggie is found
+    if (maxVeggie === '') {
+        maxVeggie = 'default'; // Replace with a valid default image name
+    }
+
     const storyImage = document.getElementById('story-image');
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
     const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
 
+    console.log('Max Veggie:', maxVeggie);
+    console.log('Image path:', veggieImagePath);
+
     // Preload the image
     const img = new Image();
     img.src = veggieImagePath;
-    img.className = 'responsive-image'; 
+    img.className = 'responsive-image';
 
-    // Create the share button
+    // Handle image load error
+    img.onerror = () => {
+        console.error(`Failed to load image: ${veggieImagePath}`);
+        text.textContent = "Oops! The image couldn't be found. Please try again!";
+    };
+
+    // Share button creation
     const shareButton = document.createElement('button');
     shareButton.textContent = 'Share the game with Friends';
     shareButton.className = 'choice-button';
 
+    shareButton.onclick = () => {
+        const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+        navigator.clipboard.writeText(shareMessage).then(() => {
+            alert('Link copied to clipboard!');
+        }).catch(() => {
+            prompt('Copy this link manually:', shareMessage);
+        });
+    };
+
     // Once the image is loaded, update the DOM
     img.onload = () => {
+        console.log('Image loaded successfully');
+        
+        // Hide previous elements
         storyImage.style.display = 'none';
         choicesContainer.style.display = 'none';
-    
+
+        // Replace the text content with the new message
+        text.innerHTML = ''; // Clear any previous content
         text.textContent = "Drumroll... here is your Veggie ID! Don't lose it! (Right click or hold the image to save)";
+        
+        // Append the new image and share button
         text.appendChild(img);
-
-        // Share button functionality
-        shareButton.onclick = () => {
-            const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
-            navigator.clipboard.writeText(shareMessage).then(() => {
-                alert('Link copied to clipboard!');
-            }).catch(err => {
-                alert('Failed to copy link. Please try again.');
-            });
-        };
-
         text.appendChild(shareButton);
     };
 }
-
 
 function startGame() {
     document.querySelector('.title').style.display = 'none';
