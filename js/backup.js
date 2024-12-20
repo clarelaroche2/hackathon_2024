@@ -15,7 +15,7 @@ const gameData = {
 "choices": {
             "Revolutionizing ocean science, of course!": [3,["adcp"]],
             "Military version of I spy": [3, ["ptz", "genset", "ais", "starlink"]],
-            "I'm on an exciting R&D mission, testing out some new technology we've put into the ocean for the first time": [3, ["starlink", "adcp", "genset"]]
+            "An R&D mission, testing out some new technology for the first time": [3, ["starlink", "adcp", "genset"]]
         }
     },
     "3": {
@@ -28,7 +28,7 @@ const gameData = {
         }
     },
     "4": {
-        "text": "OVERRRRBOAAARRRRDDDD! As you sink into the water hit ground much sooner than expected. You have discovered a sea mount",
+        "text": "OVERRRRBOAAARRRRDDDD! As you roll with the waves you hit ground much sooner than expected. You have discovered a sea mount",
         "image" : "smaller_images/seamount.png",
 "choices": {
             "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [5,["adcp", "ptz"]],
@@ -37,22 +37,78 @@ const gameData = {
         }
     },
     "5": {
-        "text": "The storm is getting really rough. It's been days since you've seen the sun. What do you try?",
+        "text": "The storm gets rougher and rougher. It's been days since you've seen the sun What do you try?",
         "image" : "smaller_images/storm.png",
 "choices": {
             "Pray to every god until one answers": [6,["adcp", "ais", "genset"]],
-            "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
-            "It's time to be realistic. Start planning who's power you are going to pull first.": [6,["genset", "ptz", "ais"]],
+            "You've seen Treasure Planet, Moana 2, and Master and Commander. You can absolutely navigate your way through this. Press on": [6,["ais", "ptz", "starlink"]],
+            "It's time to be realistic. Start planning whose power you are going to pull first.": [6,["genset", "ptz", "ais"]],
         }
     },
     "6": {
-        "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
+        "text": "Finally the sun peeks out and the clouds clear, the storm has passed! A rainbow appears in the sky. How do you react? ",
+        "image" : "smaller_images/rainbow.png",
+"choices": {
+            "Take a picture of the beautiful rainbow!": [7,["starlink","ptz"]],
+            "Breathe a sigh of relief": [7,["ais", "genset"]],
+            "Cry a tear of joy": [7,["adcp"]],
+        }
+    },
+    "7": {
+        "text": "In the distance, you hear the faint sounds of dance music playing! What do you do next? ",
+        "image" : "smaller_images/disco.png",
+"choices": {
+            "Sounds like a party! I'm going to go check it out": [8,["adcp","ptz"]],
+            "Loud music isn't allowed out here! Someone should notify the authorities": [9,["ais"]],
+            "Listen to the music from a distance": [9,["starlink", "genset"]],
+        }
+    },
+    "8": {
+        "text": "As you sail towards the music, you realize it is coming from a pirate ship! How do you react?",
+        "image" : "smaller_images/pirates.png",
+"choices": {
+            "Call the Coast Guard": [11,["genset","ais"]],
+            "Give the pirates a bottle of rum and some shells": [11,["adcp", "ptz"]],
+            "Flee instantly": [11,["ais", "ptz"]],
+            "Pretend to be a pirate as well": [11,["starlink"]],
+        }
+    },
+    "9": {
+        "text": "You listen to the music on the water for a while, and eventually the sun sets. The stars are beautiful! Suddenly you see something suspicious in the night sky, a UFO?!!?! What do you do?",
+        "image" : "smaller_images/aliens.png",
+"choices": {
+            "Aliens aren't real!": [10,["genset","ptz"]],
+            "Spooky! I hope the aliens are friendly :p": [10,["adcp"]],
+            "Try to lay low": [10,["ais", "starlink"]],
+        }
+    },
+    "10": {
+        "text": "The UFO passes by, and you continue on your journey. As you sail off, a bird swoops down and sits on you. What do you do next?",
         "image" : "smaller_images/bird.png",
 "choices": {
-            "SCREAM and tell it to get off": [0,["genset","ais"]],
-            "Say hi! Birds are cool": [0,["adcp", "ptz"]],
-            "Try to figure out if it is really a bird...": [0,["ais", "ptz"]],
-            "Die": [0,["starlink"]],
+            "SCREAM and tell it to get off": [12,["genset","ais"]],
+            "Say hi! Birds are cool": [12,["adcp", "ptz"]],
+            "Try to figure out if it is really a bird...": [12,["ais", "ptz"]],
+            "Die immediately. Birds are scary!": [12,["starlink"]],
+        }
+    },
+    "11": {
+        "text": "The pirates pass by, and you continue on your journey. As you sail off, a bird swoops down and sits on you. What do you do next?",
+        "image" : "smaller_images/bird.png",
+"choices": {
+            "SCREAM and tell it to get off": [12,["genset","ais"]],
+            "Say hi! Birds are cool": [12,["adcp", "ptz"]],
+            "Try to figure out if it is really a bird...": [12,["ais", "ptz"]],
+            "Die immediatly. Birds are scary!": [12,["starlink"]],
+        }
+    },   
+    "12": {
+        "text": "That night, you see the most beautiful sunset! How do you feel?",
+        "image" : "smaller_images/sunset.png",
+"choices": {
+            "THE OCEAN IS A MAGICAL PLACE! I'm so grateful I get to explore it!!": [0,["adcp"]],
+            "My job is the coolest!": [0,["starlink", "ptz", "ais"]],
+            "The perfect ending to the perfect day!": [0,["genset"]],
         }
     },
 };
@@ -148,7 +204,7 @@ function revealMostSelectedVegetable() {
     shareButton.className = 'choice-button';
 
     shareButton.onclick = () => {
-        const shareMessage = `Check out my Veggie ID! You can create yours at https://sophie006liu.github.io/vegetal/`;
+        const shareMessage = `Check out my Sensor ID! You can create yours at https://clarelaroche2.github.io/hackathon_2024/#`;
         navigator.clipboard.writeText(shareMessage).then(() => {
             alert('Link copied to clipboard!');
         }).catch(() => {
