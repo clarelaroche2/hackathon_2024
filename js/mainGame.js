@@ -63,8 +63,6 @@ const gameData = {
             "I'm just going to shut down, I'm giving up until the sun comes out" : [10,["Starlink", "Genset"]],
         }
     },
- 
- 
     "8": {
         "text": "The sun finally peeks out from behind the clouds. The storm passed! Phew! You look at the horizon with relief and see a black flag approaching in the distance. Pirates! What do you do next?",
         "image" : "smaller_images/at_beach.png",
@@ -75,8 +73,6 @@ const gameData = {
             "Start sailing towards them. Pirates are a good time! Maybe we can drink some rum together :p ": [10,["ADCP", "PTZ"]],
         }
     },
- 
- 
     "10": {
         "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
         "image" : "smaller_images/at_beach.png",
