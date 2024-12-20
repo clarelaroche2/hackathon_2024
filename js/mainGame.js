@@ -148,7 +148,7 @@ function revealMostSelectedVegetable() {
     const storyImage = document.getElementById('story-image');
     const text = document.getElementById('story-text');
     const choicesContainer = document.getElementById('choices');
-    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}_id.png`;
+    const veggieImagePath = `smaller_images/id_cards/${maxVeggie}.png`;
 
     // Preload the image
     const img = new Image();
