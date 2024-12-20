@@ -2,93 +2,61 @@ const gameData = {
     "1": {
         "text": "Congrats! You're going out on deployment... where are you going?",
         "image" : "smaller_images/snackies.png",
- "choices": {
+"choices": {
             "Key West": [2,["AIS","Genset","PTZ","Starlink"]],
-            "St Thomas": [2,["ADCP", "AIS","PTZ"]],
-            "San Diego": [2,["Genset", "AIS"]],
-            "Caymans": [2,["Genset","Starlink","PTZ","ADCP"]],
+            "St Thomas": [2,["ADCP"]],
+            "San Diego": [2,["PTZ", "Genset", "AIS"]],
+            "Caymans": [2,["Starlink","PTZ","ADCP"]],
         }
     },
     "2": {
         "text": "What is the purpose of your mission??",
         "image" : "smaller_images/where_to.png",
- "choices": {
-            "Revolutionizing ocean science, of course!": [3,["ADCP", "AIS"]],
+"choices": {
+            "Revolutionizing ocean science, of course!": [3,["ADCP"]],
             "Military version of I spy": [3, ["PTZ", "Genset", "AIS", "Starlink"]],
-            "I'm on an exciting R&D mission, testing out some new technology we've put into the ocean for the first time": [3, ["PTZ", "Starlink", "ADCP", "Genset"]]
+            "I'm on an exciting R&D mission, testing out some new technology we've put into the ocean for the first time": [3, ["Starlink", "ADCP", "Genset"]]
         }
     },
     "3": {
         "text": "After some great preparation and clearing TechOps and Pilot checkouts, you're ready to go! Deployment goes off without a hitch, but soon you find yourself in the middle of a crazy storm. The waves are heaving, and the wind is gusting at over 30 knots! What do you do?",
         "image" : "smaller_images/at_beach.png",
- "choices": {
-            "Fall into the water... the wave came out of nowhere!!": [4,["ADCP", "Genset"]],
-            "Hunker down! It makes the most sense to wait this one out": [5,["Genset", "AIS", "PTZ", "Starlink"]],
-            "What an opportunity! I'm curious what data we could collect here...": [5,["ADCP", "PTZ"]],
+"choices": {
+            "Fall into the water... the wave came out of nowhere!!": [4,["ADCP", "AIS"]],
+            "Hunker down! It makes the most sense to wait this one out": [4,["Genset", "PTZ", "Starlink"]],
+            "What an opportunity! I'm curious what data we could collect here...": [4,["ADCP", "PTZ"]],
         }
     },
     "4": {
-        "text": "OVERRRRBOAAARRRRDDDD! As you sink, you hit ground much sooner than expected. You have discovered a sea mount",
+        "text": "OVERRRRBOAAARRRRDDDD! As you sink into the water hit ground much sooner than expected. You have discovered a sea mount",
         "image" : "smaller_images/at_beach.png",
- "choices": {
-            "Awesome!! Science! I gotta document EVERYTHING. I hope I see a mermaid": [6,["ADCP", "PTZ", "AIS"]],
-            "Who cares?? This is not the plan you need to start looking for ways home": [6,["Genset", "Starlink", "AIS"]],
+"choices": {
+            "Awesome!! I gotta document EVERYTHING. I hope I see a mermaid": [6,["ADCP", "PTZ"]],
+            "Who cares?? It's still the water. Start looking for ways home" : [6,["Genset", "Starlink", "AIS"]],
             "Gollie Geeee! I wonder if there are boats down here...": [6,["AIS", "PTZ"]],
-        }
-    },
-    "6": {
-        "text": "Suddenly, a giant whale comes out of nowhere and swallows you right up!",
-        "image" : "smaller_images/at_beach.png",
- "choices": {
-            "I can't wait to tell the other sensors about this!!": [10,["ADCP", "AIS", "PTZ"]],
-            "I AM GOING TO DIE IN HERE I AM SCARED OF THE DARK" : [10,["Starlink", "Genset"]],
-            "If I wait for him to come up for air, I can make it out of the blow hole!!": [10,["AIS", "PTZ", "ADCP"]],
         }
     },
     "5": {
         "text": "The storm is getting really rough. It's been days since you've seen the sun",
         "image" : "smaller_images/at_beach.png",
- "choices": {
-            "Pray to every god until one answers": [7,["ADCP", "AIS", "Genset"]],
-            "Cry.": [7,["AIS"]],
-            "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [8,["AIS", "PTZ", "Starlink"]],
-            "It's time to be realistic. Start planning who's power you are going to pull first.": [8,["Genset", "PTZ", "AIS"]],
+"choices": {
+            "Pray to every god until one answers": [6,["ADCP", "AIS", "Genset"]],
+            "You've seen Treasure Planet, Moana 2, and Captain and Commander. You can absolutely navigate your way through this. Press on": [6,["AIS", "PTZ", "Starlink"]],
+            "It's time to be realistic. Start planning who's power you are going to pull first.": [6,["Genset", "PTZ", "AIS"]],
         }
     },
-    "7": {
-        "text": "What did you think that was going to do? The wind and waves are like nothing you've ever seen.",
-        "image" : "smaller_images/at_beach.png",
- "choices": {
-            "Start throwing errors. I need to get some sonar alerts back so the nerds back at HQ can help me": [10,["ADCP", "AIS", "PTZ"]],
-            "I'm just going to shut down, I'm giving up until the sun comes out" : [10,["Starlink", "Genset"]],
-        }
-    },
- 
- 
-    "8": {
-        "text": "The sun finally peeks out from behind the clouds. The storm passed! Phew! You look at the horizon with relief and see a black flag approaching in the distance. Pirates! What do you do next?",
-        "image" : "smaller_images/at_beach.png",
- "choices": {
-            "Cry": [10,["ADCP", "Genset"]],
-            "Call the Coast Guard": [10,["AIS"]],
-            "Flee immediately": [10,["AIS", "PTZ", "Starlink"]],
-            "Start sailing towards them. Pirates are a good time! Maybe we can drink some rum together :p ": [10,["ADCP", "PTZ"]],
-        }
-    },
- 
- 
-    "10": {
+    "6": {
         "text": "You are finally on mission, yay! As you sail off you notice bird swoops down and sits on you. What do you do next?",
         "image" : "smaller_images/at_beach.png",
- "choices": {
+"choices": {
             "SCREAM and tell it to get off": [0,["Genset","AIS"]],
             "Say hi! Birds are cool": [0,["ADCP", "PTZ"]],
             "Try to figure out if it is really a bird...": [0,["AIS, PTZ"]],
             "Die": [0,["Starlink"]],
         }
     },
- };
- 
+};
+
 const personalities = {
     "ptz": 0, // Nosey bitch
     "starlink": 0, // Elon Sympathizer
