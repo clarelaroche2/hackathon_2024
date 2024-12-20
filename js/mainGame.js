@@ -86,11 +86,11 @@ const gameData = {
  };
  
 const personalities = {
-    "ptz": 0, // Nosey bitch
-    "starlink": 0, // Elon Sympathizer
-    "genset": 0, // Gym bro
-    "ais": 0, // Narc
-    "adcp": 0, // Ocean enjoyer (flamboyantly)
+    "Ptz": 0, // Nosey bitch
+    "Starlink": 0, // Elon Sympathizer
+    "Genset": 0, // Gym bro
+    "Ais": 0, // Narc
+    "Adcp": 0, // Ocean enjoyer (flamboyantly)
  }; 
 
 let currentState = 1;
